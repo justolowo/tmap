@@ -112,6 +112,13 @@ tm_scale_bar <- function(breaks=NULL,
 
 
 
+tm_inset <- function(id, selection, vp=viewport(x=.7, y=.7, width = .4, height=.4)) {
+	g <- list(tm_inset=as.list(environment()))
+	names(g$tm_inset) <- paste("inset", names(g$tm_inset), sep=".")
+	class(g) <- "tmap"
+	attr(g, "call") <- names(match.call(expand.dots = TRUE)[-1])
+	g
+}
 
 
 
