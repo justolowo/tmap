@@ -3,13 +3,13 @@
 #' \tabular{ll}{
 #' Package: \tab tmap\cr
 #' Type: \tab Package\cr
-#' Version: \tab 1.0\cr
-#' Date: \tab 2015-06-28\cr
+#' Version: \tab 1.1\cr
+#' Date: \tab 2015-07-15\cr
 #' License: \tab GPL-3\cr
 #' LazyLoad: \tab yes\cr
 #' }
 #'
-#' Thematic maps are geographical maps in which statistical data are visualized. This package offers a flexible, layer-based, way to create thematic maps, such as choropleths and bubble maps.
+#' Thematic maps are geographical maps in which statistical data are visualized. This package offers a flexible, layer-based, way to create thematic maps, such as choropleths and bubble maps. Note: this version is without OSM and SVG features.
 #' To get started, see \href{../doc/tmap-nutshell.html}{\code{vignette("tmap-nutshell")}}.
 #' 
 #' @name tmap-package
