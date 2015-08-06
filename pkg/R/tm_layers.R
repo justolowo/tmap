@@ -376,5 +376,14 @@ tm_bubbles <- function(size=1, col="blueviolet",
 	g
 }
 
-
-
+#TODO expand options
+#' @export
+tm_dots <- function( col="grey70"
+				   , alpha=NA
+				   , auto_scale = TRUE
+				   , 
+				   ){
+	g <- list(tm_dots=as.list(environment()))
+	class(g) <- "tmap"
+	g
+}

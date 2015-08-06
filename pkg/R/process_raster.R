@@ -72,7 +72,6 @@ process_raster <- function(data, g, gt, gby, z) {
 	dt <- process_data(data[, x, drop=FALSE], by=by, free.scales=gby$free.scales.raster, is.colors=is.colors)
 	## output: matrix=colors, list=free.scales, vector=!freescales
 	
-	
 	nx <- max(nx, nlevels(by))
 		
 	# return if data is matrix of color values

@@ -61,6 +61,12 @@ process_layers <- function(g, z, gt, gf) {
 		graster <- process_raster(data, g$tm_raster, gt, gf, z=z+which(plot.order=="tm_raster"))
 	}	
 	
+	# dots info
+	if (is.null(g$tm_dots)) {
+		gdots <- list(dots=NULL, xdots=NA, dots.legend.title=NA) 
+	} else {
+		gdots <- process_dots(data, g$tm_dots, gt, gf, z=z+which(plot.order=="tm_dots"))
+	}	
 	
 	# text info
 	if (is.null(g$tm_text)) {
